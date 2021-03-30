@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="200px">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:src="@drawable/upn"
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:orientation="vertical"
+        android:layout_marginLeft="150px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:text="Username"
+            android:textAllCaps="true" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textAlignment="center"
+            android:text="Password"
+            android:textAllCaps="true" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.inputmethodservice.ExtractEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px">
+        <Button
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="30px"
+            android:text="@string/login"
+            />
+        <Button
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_marginStart="30px"
+            android:text="@string/regsiter"
+            />
+    </LinearLayout>
+</LinearLayout>
